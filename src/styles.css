@@ -1,0 +1,223 @@
+body{
+  background: #DCDCE5;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+button, a {
+  outline: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menuHeader {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 24px rgba(16, 17, 20, 0.8);
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  background-color: #06C167;
+  margin-top: 100px;
+  padding: 24px 0 24px 24px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #202020;
+}
+
+.info p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+
+  color: #393939;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 37px 5px 37px 24px;
+  margin-bottom: 60px;
+}
+
+.itemStep {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.itemStep h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #393939;
+}
+
+.itemStep strong {
+  font-weight: 700;
+}
+
+.allCards {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  overflow-x: scroll;
+  padding: 10px 5px;
+}
+
+.card {
+  display: block;
+  position: relative;
+}
+
+.option_inner {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 7px;
+  height: 250px;
+  width: 200px;
+}
+
+.option_inner img {
+  border-radius: 7px 7px 0 0;
+}
+
+.card .checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.checkbox:checked ~ .option_inner {
+  outline: 2px solid #06C167;
+  border-radius: 7px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tickmark {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border: 20px solid;
+  border-radius: 7px;
+  border-color: #06C167 transparent transparent #06C167;
+  display: none;
+}
+
+.checkbox:checked ~ .option_inner .tickmark {
+  display: block;
+}
+
+.tickmark:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 15px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent #FFF #FFF;
+  transform: rotate(-45deg);
+}
+
+.infoCard {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 8px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.infoCard h3 {
+  font-size: 16px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description p {
+  font-size: 12px;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.button button {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #06C167;
+  color: #FFF;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.price {
+  width: 100%;
+  position: fixed;
+  padding: 5px;
+  bottom: 48px;
+  left: 0;
+  background-color: rgb(255, 255, 32);
+}
+
+.price div {
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+}

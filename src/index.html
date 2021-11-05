@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>MyFood</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="menuHeader">
+        <img src="../img/logomarca.png" alt="logomarca" width="135px" height="40px" />
+      </header>
+      
+      <div class="banner">
+        <div class="info">
+          <h3>
+            Seu novo jeito de pedir comida ;)</h3>
+          <p>Peça agora seu combo e receba na sua casa em poucos minutos 🛵</p>
+        </div>
+        <div>
+          <img src="../img/fries.png" alt="fries" />
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="itemStep">
+          <h4><strong>1° Passo: </strong>Escolha seu Prato</h4>
+
+          <div class="allCards">
+            
+            <label class="card">
+              <input type="checkbox" value="Estrogonofe com Arroz" name="food1" onClick="onlyOne(this, 39.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <img src="../img/estrogonofe.png" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Estrogonofe com Arroz</h3>
+                    <p>Acompanhamentos: Arroz, estrogonofe de frango e batata palha. Serve 1 pessoa.</p>
+                  </div>
+                  <h3>R$ 39,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Estrogonofe com Feijão" name="food1" onClick="onlyOne(this, 24.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <img src="../img/estrogonofe.png" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Estrogonofe com Feijão</h3>
+                    <p>Arroz, estrogonofe de frango e batata palha</p>
+                  </div>
+                  <h3>R$ 24,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Estrogonofe com Galinha" name="food1" onClick="onlyOne(this, 19.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <img src="../img/estrogonofe.png" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Estrogonofe com Galinha</h3>
+                    <p>Arroz, estrogonofe de frango e batata palha</p>
+                  </div>
+                  <h3>R$ 19,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Estrogonofe com Vinagrete" name="food1" onClick="onlyOne(this, 37.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <img src="../img/estrogonofe.png" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Estrogonofe com Vinagrete</h3>
+                    <p>Arroz, estrogonofe de frango e batata palha</p>
+                  </div>
+                  <h3>R$ 37,90</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="itemStep">
+          <h4><strong>2° Passo: </strong>Escolha sua Bebida</h4>
+
+          <div class="allCards">
+            
+            <label class="card">
+              <input type="checkbox" value="Montilla 1L" name="food2" onClick="onlyOne2(this, 23.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <div class="image">
+                  <img src="../img/montilla.png" alt="food" />
+                </div>
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Montilla 1L</h3>
+                    <p>Montilla Carta Cristal é um rum leve e com um perfil aromático, ideal para ser utilizado na criação de misturas e drinks</p>
+                  </div>
+                  <h3>R$ 23,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Bala Blue 1L" name="food2" onClick="onlyOne2(this, 19.90)" class="checkbox" />
+              <div class="option_inner drinks">
+                <div class="tickmark"></div>
+                <div class="image">
+                  <img src="../img/balaBlue.png" alt="food" />
+                </div>
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Bala Blue 1L</h3>
+                    <p>Apesar de ser popularmente chamado de Pinga Azul, BalaBlue é um coquetel alcoólico leitoso de vodka, com notas marcantes de blueberry e amora</p>
+                  </div>
+                  <h3>R$ 19,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Montilla de Mel 1L" name="food2" onClick="onlyOne2(this, 21.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <div class="image">
+                  <img src="../img/montilla.png" alt="food" />
+                </div>
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Montilla 1L</h3>
+                    <p>Montilla Carta Cristal é um rum leve e com um perfil aromático, ideal para ser utilizado na criação de misturas e drinks</p>
+                  </div>
+                  <h3>R$ 21,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Bala Blue 1L" name="food2" onClick="onlyOne2(this, 14.90)" class="checkbox" />
+              <div class="option_inner drinks">
+                <div class="tickmark"></div>
+                <div class="image">
+                  <img src="../img/balaBlue.png" alt="food" />
+                </div>
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Bala Blue 1L</h3>
+                    <p>Apesar de ser popularmente chamado de Pinga Azul, BalaBlue é um coquetel alcoólico leitoso de vodka, com notas marcantes de blueberry e amora</p>
+                  </div>
+                  <h3>R$ 14,90</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="itemStep">
+          <h4><strong>3° Passo: </strong>Escolha sua Sobremesa</h4>
+
+          <div class="allCards">
+            
+            <label class="card">
+              <input type="checkbox" value="Sobremesa gelada sensação" name="food3" onClick="onlyOne3(this, 14.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <img src="../img/sobremesa.jpg" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Sobremesa gelada sensação</h3>
+                    <p>Sobremesa gelada sensação de morango com chocolate</p>
+                  </div>
+                  <h3>R$ 14,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Sobremesa gelada sensação" name="food3" onClick="onlyOne3(this, 9.90)" class="checkbox" />
+              <div class="option_inner drinks">
+                <div class="tickmark"></div>
+                <img src="../img/pudim.jpg" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Sobremesa gelada sensação</h3>
+                    <p>Pudim gelado de chocolate com leite ninho</p>
+                  </div>
+                  <h3>R$ 9,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Sobremesa gelada sensação" name="food3" onClick="onlyOne3(this, 33.90)" class="checkbox" />
+              <div class="option_inner">
+                <div class="tickmark"></div>
+                <img src="../img/sobremesa.jpg" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Sobremesa gelada sensação</h3>
+                    <p>Sobremesa gelada sensação de morango com chocolate</p>
+                  </div>
+                  <h3>R$ 33,90</h3>
+                </div>
+              </div>
+            </label>
+
+            <label class="card">
+              <input type="checkbox" value="Pudim gelado" name="food3" onClick="onlyOne3(this, 19.90)" class="checkbox" />
+              <div class="option_inner drinks">
+                <div class="tickmark"></div>
+                <img src="../img/pudim.jpg" alt="food" />
+                <div class="infoCard">
+                  <div class="description">
+                    <h3>Pudim gelado</h3>
+                    <p>Pudim gelado de chocolate com leite ninho</p>
+                  </div>
+                  <h3>R$ 19,90</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="price">
+        <div>
+          <p>Valor total: </p>
+          <strong id="valuePrice"> R$ 0.00</strong>
+        </div>
+      </div>
+
+      <div class="button">
+        <button type="button" id="active" onClick="submitWhatsapp()">Finalizar pedido</button>
+      </div>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
